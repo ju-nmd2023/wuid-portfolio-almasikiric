@@ -1,0 +1,177 @@
+body {
+  background-color: rgb(254, 171, 185);
+}
+
+.images {
+  width: 20%;
+  padding: 1%;
+  padding-left: 40%;
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand", serif;
+  color: rgb(255, 31, 64);
+}
+
+/* HEADER INFO */
+h1 {
+  font-size: 3rem;
+  color: rgb(255, 31, 64);
+  margin-bottom: 1px;
+}
+
+.subheader {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid blue;
+  border-radius: 50px;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  padding: 0px 20px 0px 20px;
+}
+
+/* MAIN  + second page links */
+
+.image-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.mainheader {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 31, 64);
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* IMAGE SIZING  second page */
+.sizing {
+  width: 30%;
+}
+
+a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* IMAGE ALIGNMENT second page */
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  margin: auto;
+}
+
+.image-container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+/* THIRD PAGE */
+.contact-header {
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  color: rgb(255, 31, 64);
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.question {
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.info {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.h5-header {
+  text-align: center;
+  font-family: "Shrikhand", serif;
+  color: blue;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 25px;
+}
+
+.contact-form {
+  background: #fff;
+  width: 40%;
+  margin: auto;
+  display: flex;
+}
+
+input {
+  width: 200px;
+  height: 30px;
+  font-family: "Shrikhand", serif;
+  font-size: 15px;
+  outline: 0;
+  padding-left: 5px;
+  border-color: blue;
+  border-width: 2px;
+  border-radius: 20px;
+  margin-left: 43%;
+}
+textarea {
+  width: 200px;
+  height: 70px;
+  font-family: "Shrikhand", serif;
+  font-size: 15px;
+  outline: 0;
+  border-color: blue;
+  border-width: 2px;
+  border-radius: 25px;
+  padding-left: 12px;
+  margin-left: 43%;
+}
+
+input,
+textarea {
+  color: rgb(255, 139, 158);
+}
+
+::placeholder {
+  color: rgb(255, 139, 158);
+}
+
+button {
+  background-color: blue;
+  border-radius: 20px;
+  color: pink;
+  font-family: "Shrikhand", serif;
+  display: flex;
+  margin: auto;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 90%;
+  cursor: pointer;
+  color: pink;
+}
+
+/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. */
