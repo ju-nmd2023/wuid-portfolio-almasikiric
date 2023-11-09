@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0);
 }
 
 .images {
@@ -31,7 +31,7 @@ h1 {
   padding: 0px 20px 0px 20px;
 }
 
-/* MAIN  + second page links */
+/* MAIN FIRST PAGE + LINK */
 
 .image-text {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +39,10 @@ h1 {
   background-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 31, 64);
   border-radius: 4px;
-  width: 100px;
+  width: 40%;
+  padding: 1%;
+  margin-left: 30%;
+  margin-top: 1%;
 }
 
 .mainheader {
@@ -50,18 +53,15 @@ h1 {
   text-align: center;
 }
 
+/* LINK COLORS */
+
 a {
   color: rgb(255, 31, 64);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
-}
-
-/* IMAGE SIZING  second page */
-.sizing {
-  width: 30%;
+  color: rgb(154, 0, 0);
 }
 
 a {
@@ -71,21 +71,7 @@ a {
   margin-right: 10px;
 }
 
-/* IMAGE ALIGNMENT second page */
-
-.image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
- gap: 20%;
- 
-}
-
-
-
-
-
-/* THIRD PAGE */
+/* CONTACT FORM */
 .contact-header {
   text-align: center;
   font-family: "Shrikhand", serif;
@@ -98,32 +84,23 @@ a {
 .question {
   text-align: center;
   font-family: "Shrikhand", serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 50px;
   margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.info {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-bottom: 0px;
+  margin-bottom: 1%;
 }
 
 .h5-header {
   text-align: center;
   font-family: "Shrikhand", serif;
-  color: blue;
+  color: rgb(255, 31, 64);
   margin-top: 10px;
-  margin-bottom: 0px;
+  margin-bottom: 1%;
   font-size: 25px;
 }
 
-/* CONTACT FORM */
-
 .contact-form {
-  background: #fff;
+  background: #ffffff;
   width: 40%;
   margin: auto;
   display: flex;
@@ -136,20 +113,18 @@ input {
   font-size: 15px;
   outline: 0;
   padding-left: 5px;
-  border-color: blue;
+  border-color: rgb(255, 31, 64);
   border-width: 2px;
   border-radius: 20px;
   margin-left: 43%;
 }
-.send-message {
-
+.enter-message {
   width: 200px;
   height: 70px;
   font-family: "Shrikhand", serif;
   font-size: 15px;
   outline: 0;
-  border-color: blue;
-  line-height: 0%;
+  border-color: rgb(255, 31, 64);
 }
 
 input {
@@ -158,21 +133,22 @@ input {
 
 ::placeholder {
   color: rgb(0, 0, 0);
-  
 }
 
-.send-message::placeholder {
+.enter-message::placeholder {
   transform: translateY(-20px);
 }
 
+/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. Lines 170-186.*/
+
 button {
-  background-color: blue;
+  background-color: rgb(255, 31, 64);
   border-radius: 20px;
   color: rgb(255, 255, 255);
   font-family: "Shrikhand", serif;
   display: flex;
-  margin:auto;
-  margin-top: 5%;
+  margin: auto;
+  margin-top: 2%;
   padding: 10px 15px;
   text-align: center;
 }
@@ -183,4 +159,11 @@ button:hover {
   color: rgb(0, 0, 0);
 }
 
-/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. */
+/* PROJECT */
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 15%;
+}
