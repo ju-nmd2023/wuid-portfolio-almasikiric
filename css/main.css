@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(254, 171, 185);
+  background-color: rgb(255, 255, 255);
 }
 
 .images {
@@ -23,8 +23,8 @@ h1 {
 
 .subheader {
   background-color: rgb(255, 255, 255);
-  border: 2px solid blue;
-  border-radius: 50px;
+  border: 2px solid rgb(255, 31, 64);
+  border-radius: 2px;
   text-align: center;
   width: fit-content;
   margin: auto;
@@ -36,6 +36,10 @@ h1 {
 .image-text {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 31, 64);
+  border-radius: 4px;
+  width: 100px;
 }
 
 .mainheader {
@@ -71,16 +75,15 @@ a {
 
 .image-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 60%;
-  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+ gap: 20%;
+ 
 }
 
-.image-container {
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-}
+
+
+
 
 /* THIRD PAGE */
 .contact-header {
@@ -95,7 +98,7 @@ a {
 .question {
   text-align: center;
   font-family: "Shrikhand", serif;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 50px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -117,6 +120,8 @@ a {
   font-size: 25px;
 }
 
+/* CONTACT FORM */
+
 .contact-form {
   background: #fff;
   width: 40%;
@@ -136,35 +141,38 @@ input {
   border-radius: 20px;
   margin-left: 43%;
 }
-textarea {
+.send-message {
+
   width: 200px;
   height: 70px;
   font-family: "Shrikhand", serif;
   font-size: 15px;
   outline: 0;
   border-color: blue;
-  border-width: 2px;
-  border-radius: 25px;
-  padding-left: 12px;
-  margin-left: 43%;
+  line-height: 0%;
 }
 
-input,
-textarea {
-  color: rgb(255, 139, 158);
+input {
+  color: rgb(0, 0, 0);
 }
 
 ::placeholder {
-  color: rgb(255, 139, 158);
+  color: rgb(0, 0, 0);
+  
+}
+
+.send-message::placeholder {
+  transform: translateY(-20px);
 }
 
 button {
   background-color: blue;
   border-radius: 20px;
-  color: pink;
+  color: rgb(255, 255, 255);
   font-family: "Shrikhand", serif;
   display: flex;
-  margin: auto;
+  margin:auto;
+  margin-top: 5%;
   padding: 10px 15px;
   text-align: center;
 }
@@ -172,7 +180,7 @@ button {
 button:hover {
   opacity: 90%;
   cursor: pointer;
-  color: pink;
+  color: rgb(0, 0, 0);
 }
 
 /* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. */
