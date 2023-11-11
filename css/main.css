@@ -140,8 +140,6 @@ input {
   transform: translateY(-20px);
 }
 
-/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. Lines 170-186.*/
-
 button {
   background-color: rgb(255, 31, 64);
   border-radius: 20px;
@@ -153,6 +151,7 @@ button {
   padding: 10px 15px;
   text-align: center;
 }
+/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. Lines 156-168.*/
 
 button:hover {
   opacity: 90%;
