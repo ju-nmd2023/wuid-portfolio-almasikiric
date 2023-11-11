@@ -179,7 +179,8 @@ button:hover {
 .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 80%;
-  gap: 5%;
+  width: 90%;
+  gap: 10%;
+  margin: auto
 }
 
