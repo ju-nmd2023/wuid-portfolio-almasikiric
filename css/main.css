@@ -131,9 +131,11 @@ input {
   border-color: rgb(175, 0, 0);
   border-width: 2px;
   border-radius: 20px;
-  margin-left: 43%;
-  margin-bottom: 1%;
-}
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  color: rgb(0, 0, 0);
+  }
 .enter-message {
   width: 200px;
   height: 70px;
@@ -143,9 +145,6 @@ input {
   border-color: rgb(255, 31, 64);
 }
 
-input {
-  color: rgb(0, 0, 0);
-}
 
 ::placeholder {
   color: rgb(0, 0, 0);
