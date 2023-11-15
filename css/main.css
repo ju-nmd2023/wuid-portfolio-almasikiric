@@ -68,7 +68,6 @@ h1 {
   .image-text {
     min-width: 90%;
     font-size: 12px;
-    /* margin-right: 50px; */
   }
 }
 
@@ -141,6 +140,8 @@ a {
   margin-bottom: 1%;
   font-size: 25px;
 }
+
+/* CONTACT FORM */
 
 .contact-form {
   background: #ffffff;
