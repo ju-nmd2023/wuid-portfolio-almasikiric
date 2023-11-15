@@ -9,8 +9,8 @@ body {
   border-radius: 50%;
   padding: 10px;
   float: right;
-  margin-top: -4%;
   margin-right: 5%;
+  margin-left: 20px;
 }
 
 h1,
@@ -19,7 +19,7 @@ h2 {
   color: rgb(175, 0, 0);
 }
 
-/* HEADER INFO */
+/* HEADER INFO index */
 h1 {
   font-size: 3rem;
   color: rgb(175, 0, 0);
@@ -27,12 +27,12 @@ h1 {
 }
 
 .subheader {
+  text-align: center;
   font-size: 250%;
   margin: auto;
   padding: 0px 20px 0px 20px;
-  margin-left: 20%;
-  margin-top: 2%;
-  margin-bottom: auto;
+  /* margin-left: 20%;
+  margin-top: 2%; */
 }
 
 .about-me {
@@ -46,6 +46,32 @@ h1 {
   color: #ffffff;
 }
 
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 800px) {
+  .images {
+    display: none;
+  }
+  .subheader {
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+  }
+  .about-me {
+    margin: auto;
+    text-align: center;
+    font-size: 150%;
+  }
+  img {
+    display: none;
+  }
+  .image-text {
+    min-width: 90%;
+    font-size: 12px;
+    /* margin-right: 50px; */
+  }
+}
+
 /* MAIN FIRST PAGE + LINK */
 
 .image-text {
@@ -53,9 +79,10 @@ h1 {
   color: #ffffff;
   width: 40%;
   padding: 0px 20px 0px 20px;
-  margin-left: 20%;
+  /* margin-left: 20%; */
   margin-top: 2%;
   margin-bottom: auto;
+  margin: auto;
 }
 
 .mainheader {
@@ -75,6 +102,7 @@ a {
   text-decoration: none;
 }
 
+/* LINK HOVERING */
 a:hover {
   color: #841212;
 }
@@ -167,7 +195,7 @@ button {
   padding: 10px 15px;
   text-align: center;
 }
-/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. Lines 156-168.*/
+/* THIS CODING WAS ADAPTED THROUGH THIS YOUTUBE VIDEO https://www.youtube.com/watch?v=gWgzzVVcqfA&t=447s. Accessed: 2023-11-04. Lines 172-186.*/
 
 button:hover {
   opacity: 90%;
@@ -175,12 +203,44 @@ button:hover {
   color: rgb(250, 250, 250);
 }
 
-/* PROJECT */
+/* PROJECT page */
 
 .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
+  gap: 10%;
+  margin: auto;
+}
+
+.image-container 
+
+/* .hover {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.7s ease;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.hover:hover {
+  opacity: 5;
+}
+
+.outer {
+  position: relative;
+}
+
+.outer:hover .hover {
+  opacity: 3;
+} */
+/* SPECIFIC PROJECT, ONE */
+
+.dior {
+  display: flex;
+  width: 30%;
   gap: 10%;
   margin: auto;
 }
