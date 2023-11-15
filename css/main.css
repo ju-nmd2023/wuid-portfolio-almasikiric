@@ -36,7 +36,7 @@ h1 {
 }
 
 .about-me {
-  font-size: 250%;
+  font-size: 50px;
   margin: auto;
   padding: 0px 20px 0px 20px;
   margin-left: 30%;
@@ -61,7 +61,6 @@ h1 {
     margin: auto;
     text-align: center;
     font-size: 150%;
-    
   }
   img {
     display: none;
@@ -162,6 +161,7 @@ textarea {
   border-color: rgb(175, 0, 0);
   border-width: 2px;
   border-radius: 20px;
+  border-style: solid;
   margin: auto;
   margin-bottom: 5px;
   display: flex;
@@ -237,7 +237,7 @@ button:hover {
 
 .dior {
   display: flex;
-  width: 26%;
+  width: 25%;
   gap: 10%;
   margin: auto;
   border-radius: 2px;
@@ -248,8 +248,41 @@ button:hover {
 .dior-text {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  width: 26%;
+  font-size: 13.5px;
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.dior-subheader {
+  color: rgb(175, 0, 0);
+  width: 50%;
+  font-size: 30pt;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+  margin-top: -1%;
+  margin-bottom: -1%;
+}
+
+/* MEDIA QUERY SPECIFIC PROJECT */
+@media only screen and (max-width: 800px) {
+  .dior-text {
+    min-width: 45%;
+    font-size: 13px;
+  }
+
+  .dior {
+    width: 40%;
+  }
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: #fff solid 2px;
+  margin-top: 20%;
+  text-align: center;
+  color: #fff;
 }
