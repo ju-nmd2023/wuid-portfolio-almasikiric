@@ -39,7 +39,7 @@ h1 {
   font-size: 250%;
   margin: auto;
   padding: 0px 20px 0px 20px;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-top: 1%;
   margin-bottom: auto;
   text-align: center;
@@ -61,6 +61,7 @@ h1 {
     margin: auto;
     text-align: center;
     font-size: 150%;
+    
   }
   img {
     display: none;
@@ -222,14 +223,14 @@ button:hover {
   gap: 10%;
   margin: auto;
   border-radius: 2px;
-  border: 5px solid rgb(175, 0, 0);
+  border: 5px solid rgb(255, 255, 255);
   padding: 5px;
 }
 
 .one-image:hover {
   opacity: 80%;
   cursor: pointer;
-  border: 5px solid rgb(255, 255, 255);
+  border: 5px solid rgb(175, 0, 0);
 }
 
 /* SPECIFIC PROJECT, ONE */
