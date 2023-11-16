@@ -275,6 +275,21 @@ button:hover {
   .dior {
     width: 40%;
   }
+  .image-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  footer {
+    margin-top: 40rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    margin-top: 40rem;
+  }
 }
 
 /* FOOTER */
