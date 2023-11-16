@@ -25,6 +25,12 @@ h1 {
   color: rgb(175, 0, 0);
   margin-bottom: 1px;
 }
+.mainheader {
+  font-size: 48px;
+  text-align: center;
+  animation: myanimation infinite;
+  animation: colorchanging 30s;
+}
 
 .subheader {
   text-align: center;
@@ -82,10 +88,6 @@ h1 {
   margin-top: 2%;
   margin-bottom: auto;
   margin: auto;
-}
-
-.mainheader {
-  text-align: center;
 }
 
 .links {
@@ -271,6 +273,9 @@ button:hover {
     min-width: 45%;
     font-size: 13px;
   }
+  body {
+    height: fit-content;
+  }
 
   .dior {
     width: 40%;
@@ -279,19 +284,43 @@ button:hover {
     grid-template-columns: 1fr 1fr;
   }
   footer {
-    margin-top: 40rem;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .image-container {
     grid-template-columns: 1fr;
+    gap: 2%;
   }
   footer {
-    margin-top: 40rem;
+    display: none;
   }
 }
 
+@keyframes myanimation {
+  from {
+    font-size: 50px;
+  }
+  to {
+    font-size: 150px;
+  }
+}
+
+@keyframes colorchanging {
+  from {
+    color: rgb(255, 0, 0);
+  }
+  100% {
+    color: #1500fb;
+  }
+  50% {
+    color: rgb(255, 187, 0);
+  }
+  to {
+    color: rgb(4, 255, 0);
+  }
+}
 /* FOOTER */
 footer {
   width: 100%;
