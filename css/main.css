@@ -28,8 +28,11 @@ h1 {
 .mainheader {
   font-size: 48px;
   text-align: center;
-  animation: myanimation infinite;
-  animation: colorchanging 30s;
+  animation-name: myanimation, colorchanging;
+  animation-duration: 10s;
+  /*animation: myanimation 5s; 
+  animation: colorchanging 10s; */
+  animation-iteration-count: 10s;
 }
 
 .subheader {
@@ -212,27 +215,52 @@ button:hover {
 .image-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 90%;
   gap: 10%;
   margin: auto;
   border-radius: 2px;
+}
+
+.hover-dior {
+  width: 100%;
+  opacity: 100%;
+  margin: auto;
+  display: flex;
 }
 
 .one-image {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 90%;
+  display: block;
+  position: relative;
   gap: 10%;
   margin: auto;
   border-radius: 2px;
-  border: 5px solid rgb(255, 255, 255);
-  padding: 5px;
 }
 
-.one-image:hover {
-  opacity: 80%;
-  cursor: pointer;
-  border: 5px solid rgb(175, 0, 0);
+img {
+  width: 90%;
+  display: block;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  font-family: "Shrikhand", serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 40%;
+  visibility: hidden;
+}
+
+#blur:hover {
+  filter: blur(5px);
+}
+
+.one-image:hover .content {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* SPECIFIC PROJECT, ONE */
@@ -243,7 +271,6 @@ button:hover {
   gap: 10%;
   margin: auto;
   border-radius: 2px;
-  border: 5px solid rgb(255, 255, 255);
   padding: 5px;
 }
 
@@ -299,26 +326,29 @@ button:hover {
 }
 
 @keyframes myanimation {
-  from {
+  0% {
     font-size: 50px;
   }
-  to {
-    font-size: 150px;
+  50% {
+    font-size: 70px;
+  }
+  100% {
+    font-size: 50px;
   }
 }
 
 @keyframes colorchanging {
   from {
-    color: rgb(255, 0, 0);
+    color: rgb(175, 0, 0);
   }
-  100% {
-    color: #1500fb;
+  25% {
+    color: #740000;
   }
   50% {
-    color: rgb(255, 187, 0);
+    color: rgb(20, 0, 0);
   }
   to {
-    color: rgb(4, 255, 0);
+    color: rgb(175, 0, 0);
   }
 }
 /* FOOTER */
