@@ -1,14 +1,17 @@
+a {
+  color: #fff;
+}
 /* index page */
 body {
-  background-color: rgba(0, 0, 0);
+  background-color: #26272f;
 }
 
 .images {
   width: 25%;
   border: 10px solid rgb(175, 0, 0);
   border-radius: 50%;
-  padding: 10px;
   float: right;
+  padding: 10px;
   margin-right: 5%;
   margin-left: 20px;
 }
@@ -20,16 +23,15 @@ h2 {
 }
 
 /* HEADER INFO index */
-h1 {
-  font-size: 3rem;
+
+.mainheader {
   color: rgb(175, 0, 0);
   margin-bottom: 1px;
-}
-.mainheader {
-  font-size: 48px;
+  font-size: 50px;
   text-align: center;
   animation-name: myanimation, colorchanging;
-  animation-duration: 10s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
   /*animation: myanimation 5s; 
   animation: colorchanging 10s; */
   animation-iteration-count: 10s;
@@ -252,9 +254,10 @@ img {
   top: 0;
   left: 40%;
   visibility: hidden;
+  pointer-events: none;
 }
 
-#blur:hover {
+.blur:hover {
   filter: blur(5px);
 }
 
@@ -327,25 +330,22 @@ img {
 
 @keyframes myanimation {
   0% {
-    font-size: 50px;
+    text-shadow: 15px 10px 4px rgb(0, 0, 0);
   }
-  50% {
-    font-size: 70px;
+  80% {
+    text-shadow: -9px 10px 4px #000000;
   }
   100% {
-    font-size: 50px;
+    text-shadow: -15px 10px 4px #00000000;
   }
 }
 
 @keyframes colorchanging {
   from {
-    color: rgb(175, 0, 0);
+    color: rgb(93, 16, 16);
   }
-  25% {
-    color: #740000;
-  }
-  50% {
-    color: rgb(20, 0, 0);
+  20% {
+    color: #7b0101;
   }
   to {
     color: rgb(175, 0, 0);
