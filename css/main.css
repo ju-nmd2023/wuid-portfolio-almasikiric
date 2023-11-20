@@ -30,10 +30,9 @@ h2 {
   font-size: 50px;
   text-align: center;
   animation-name: myanimation, colorchanging;
+  animation-fill-mode: forwards;
   animation-duration: 5s;
   animation-timing-function: linear;
-  /*animation: myanimation 5s; 
-  animation: colorchanging 10s; */
   animation-iteration-count: 10s;
 }
 
@@ -42,8 +41,8 @@ h2 {
   font-size: 250%;
   margin: auto;
   padding: 0px 20px 0px 20px;
-  /* margin-left: 20%;
-  margin-top: 2%; */
+  text-shadow: 15px 10px 4px rgb(0, 0, 0);
+
 }
 
 .about-me {
@@ -336,7 +335,7 @@ img {
     text-shadow: -9px 10px 4px #000000;
   }
   100% {
-    text-shadow: -15px 10px 4px #00000000;
+    text-shadow: -15px 10px 4px #000000;
   }
 }
 
