@@ -6,14 +6,28 @@ body {
   background-color: #26272f;
 }
 
-.images {
-  width: 25%;
-  border: 10px solid rgb(175, 0, 0);
-  border-radius: 50%;
+#imageButton {
+  background: none;
+  border: none;
+  border-radius: 100%;
+
+  width: 27%;
+  height: 27%;
   float: right;
   padding: 10px;
   margin-right: 5%;
   margin-left: 20px;
+  border: 10px solid rgb(175, 0, 0);
+}
+
+#imageButton:hover {
+  border: 10px solid #841212;
+}
+
+.images {
+  width: 100%;
+  border-radius: 50%;
+  float: right;
 }
 
 h1,
@@ -42,7 +56,6 @@ h2 {
   margin: auto;
   padding: 0px 20px 0px 20px;
   text-shadow: -15px 10px 4px rgb(0, 0, 0);
-
 }
 
 .about-me {
@@ -67,6 +80,10 @@ h2 {
     text-align: center;
     font-size: 150%;
   }
+
+  #imageButton {
+    display: none;
+  }
   .about-me {
     margin: auto;
     text-align: center;
@@ -80,6 +97,8 @@ h2 {
     font-size: 12px;
   }
 }
+
+
 
 /* MAIN FIRST PAGE + LINK */
 
