@@ -6,6 +6,8 @@ body {
   background-color: #26272f;
 }
 
+/* Kinda weird, had to set the image width to 100% and define button width height to 27%, 
+but it looks the same. The button stretched over the whole page, no matter what changes I did. */
 #imageButton {
   background: none;
   border: none;
