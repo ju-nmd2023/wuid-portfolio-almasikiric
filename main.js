@@ -1,4 +1,4 @@
-//The 2nd line is cited by Anton because javascript loaded before the rest of the website
+//The 2nd line is cited by Anton due to javascript loading before the rest of the website.
 window.onload = function () {
   const imageElement = document.getElementById("image");
   const buttonElement = document.getElementById("imageButton");
